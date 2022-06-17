@@ -44,7 +44,7 @@ main {
 
 .content2 > p {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   border-radius: 0.5rem;
   text-align: center;
   font-size: 1.1rem;
@@ -137,6 +137,39 @@ small > span {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .content2 > p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Flex-Grid-Container {
+    flex-direction: column;
+  }
+  .content2 > p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mobile-container {
+    background: url("../img/bg-intro-mobile.png") no-repeat center center cover;
+  }
+  .Flex-Grid-Container {
+    flex-direction: column;
+  }
+  .content1 > h1 {
+    font-size: 1.3rem;
+  }
+  .content1 > p {
+    font-size: 0.7rem;
+  }
+  .content2 > p {
+    font-size: 0.6rem;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .mobile-container {
     background: url("../img/bg-intro-mobile.png") no-repeat center center cover;
@@ -166,5 +199,8 @@ small > span {
   }
   .content2 .btn {
     font-size: 0.5rem;
+  }
+  .errormsg {
+    font-size: 0.4rem;
   }
 }
